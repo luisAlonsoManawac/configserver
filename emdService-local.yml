@@ -1,7 +1,7 @@
 spring:
   application:
     name: emdService
-    
+
   data:
     mongodb:
       authentication-database: admin
@@ -20,10 +20,10 @@ eureka:
     registryFetchIntervalSeconds: 5
     serviceUrl:
       defaultZone: http://localhost:8762/eureka/
-  instance:
-    appname: emdService
+      instance:
+        appname: emdService
 
 server:
   port: 8082
 
-message: hola
+message: hola2

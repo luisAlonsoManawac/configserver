@@ -20,10 +20,8 @@ eureka:
     registryFetchIntervalSeconds: 5
     serviceUrl:
       defaultZone: http://localhost:8762/eureka/
-      instance:
-        appname: emdService
-
+    
 server:
   port: 8082
 
-message: hola2
+message: hola2ddd

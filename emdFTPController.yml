@@ -1,6 +1,6 @@
 spring:
   application:
-    name: emdServiceLayer
+    name: emdFTPController
     
   data:
     mongodb:

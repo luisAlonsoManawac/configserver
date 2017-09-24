@@ -10,7 +10,7 @@ com:
           messages:
             per:
             ## number of threads to concurrently consume messages
-              poll=5
+              poll: 5
         filename:
         ## File name pattern. Files that don't match this pattern will be ignored
           regex ([^\\s]+(\\.(?i)(xml))$)

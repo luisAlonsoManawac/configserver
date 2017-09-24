@@ -1,0 +1,20 @@
+spring:
+  data:
+    mongodb:
+      host: 138.68.157.172
+      
+property:
+  com:
+    emd:
+      api:
+        login:
+          LoginService:
+            hostPort=http://138.68.157.172:8090
+        s:
+          ValidationServiceImpl:
+            hostPort: http://138.68.157.172:8090
+        entity:
+          EntityService:
+            hostPort: http://138.68.157.172:8090
+      db:
+        hostPort: http://138.68.157.172:8090

@@ -1,0 +1,57 @@
+spring:
+  application:
+    name: emdServiceLayer
+    
+  data:
+    mongodb:
+      authentication-database: admin
+      host: mon1.manapp.com
+      port: 27017
+      username: siteRootAdmin
+      password: password
+      
+  rabbitmq:
+    addresses: mon2.manapp.com
+    host: mon2.manapp.com
+    
+eureka:
+  client:
+    region: default
+    registryFetchIntervalSeconds: 5
+    serviceUrl:
+      defaultZone: http://localhost:8762/eureka/
+    
+server:
+  port: 8091
+  
+#EMD
+property:
+  com:
+    emd:
+      api:
+        login:
+          LoginService:
+            hostPort: http://localhost:8090
+            loggedMessage: Logged in successfully!
+        s:
+          ValidationServiceImpl:
+            hostPort: http://localhost:8090
+            findByCommerceIdAndActionAndDocument: /commerceFilter/search/findByCommerceIdAndActionAndDocument?commerceId={commerceId}&action={action}&document={document}
+            uriPurchaseOrder: /purchaseOrder
+        entity:
+          EntityService:
+            hostPort: http://localhost:8090
+            filterNotPassedVerbose: true
+
+      core:
+        command:
+          CommandService:
+            hostPort: http://localhost:8090
+            gatewayHostPort: http://localhost:8091
+            findByCommerceIdAndMethodAndUri: /commandSet/search/findByCommerceIdAndMethodAndUri?commerceId={commerceId}&method={method}&uri={uri}
+
+      db:
+        hostPort: http://localhost:8090
+
+      services:
+        version: 170425

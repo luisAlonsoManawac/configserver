@@ -64,8 +64,6 @@ property:
         navpurchaseOrder:
           fixed:
             delay: 60000
-           #Problemas de lectura de la �, en ISO y en UTF8
-            # uri=/NAV2017_SGA_DEV/WS/CRONUS Espa�a S.A./Codeunit/WMS
         navworkOrder:
           fixed:
             delay: 60000
@@ -83,14 +81,3 @@ property:
           outPath: /intercambio
           prefix: stock 
           groupnumber: 5          
-        ftp:
-          name: asdd
-          ip: 10.0.1.10
-          user: asdd
-          passwd: blaba
-          stock:
-            response:
-              path: /outbound
-              outPath: /inbound/stock
-              patron: *item.xml*
-              delay: 60000

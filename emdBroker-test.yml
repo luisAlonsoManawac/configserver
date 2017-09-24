@@ -1,0 +1,15 @@
+spring:
+  data:
+    mongodb:
+      host: 138.68.157.172
+      
+property:
+  com:
+    emd:
+      data:
+        hostPort: http://138.68.157.172:8090
+      controler:  
+            hostPort: http://138.68.157.172:8091
+      host:
+        hostPort: http://138.68.157.172:8090 
+                                 

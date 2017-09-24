@@ -1,0 +1,14 @@
+spring:
+  data:
+    mongodb:
+      host: 10.0.1.11
+      
+property:
+  com:
+    emd:
+      data:
+        hostPort: http://10.0.1.11:8090
+      controler:  
+            hostPort: http://10.0.1.11:8090
+      host:
+        hostPort: http://10.0.1.11:8090

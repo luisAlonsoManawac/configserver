@@ -1,0 +1,36 @@
+﻿spring:
+  application:
+    name: emdFilePollerController
+    
+com:
+  emd:
+    broker:
+      filepoller:
+        max:
+          messages:
+            per:
+            ## number of threads to concurrently consume messages
+              poll=5
+        filename:
+        ## File name pattern. Files that don't match this pattern will be ignored
+          regex ([^\\s]+(\\.(?i)(xml))$)
+        read:
+        ## Directory path to look for new files
+          path: ./intercambio/in
+        processed:
+        ## Directory path to place files that have been successfully processed
+          path: ./intercambio/processed
+        failed:
+        ## Directory path to place files that fail processing
+          path: ./intercambio/failed
+        out:
+        ## Directory path to place outbound files
+          path: ./intercambio/out
+          filename:
+          ## Suffix to apply to outbound files
+            suffix: .xml
+        fixed:
+          delay=1000
+        thread:
+          pool:
+            size: 4

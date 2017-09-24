@@ -30,7 +30,7 @@ com:
           ## Suffix to apply to outbound files
             suffix: .xml
         fixed:
-          delay=1000
+          delay: 1000
         thread:
           pool:
             size: 4

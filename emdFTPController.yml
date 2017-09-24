@@ -37,5 +37,8 @@ property:
           Port: 21
           User: emd
           Password: jose
-
+        ftp:
+          RemoteDirectory: ./intercambio
+          LocalDirectory: ./intercambio/in
+          Pattern: "*"
           

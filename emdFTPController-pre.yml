@@ -15,4 +15,4 @@ property:
         ftp:
           RemoteDirectory: ./intercambio
           LocalDirectory: ./intercambio/in
-          Pattern: *.*
+          Pattern: "*"

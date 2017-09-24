@@ -1,0 +1,43 @@
+server:
+  port: 8093
+  
+spring:
+  application:
+    name: emdGateWay
+  
+  # PROFILES
+  profiles:
+    active: local
+  
+  # MONGODB
+  data:
+    mongodb:
+      authentication-database: admin
+      host: mon1.manapp.com
+      port: 27017
+      username: siteRootAdmin
+      password: password
+      # database: emd-db
+      
+  # RABBIT (RabbitProperties)
+  rabbitmq:
+    addresses: mon2.manapp.com
+    host: mon2.manapp.com
+
+property:
+  com:
+    emd:
+      api:
+        login:
+          LoginService:
+            hostPort: http://localhost:8090
+            loggedMessage: Logged in successfully!
+            expirationTime: 864000
+      cors:
+        origins: http://localhost:4200
+        methods: POST,GET,PATCH,DELETE
+      service:
+        login:
+          version: 190407
+          
+

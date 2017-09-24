@@ -30,13 +30,13 @@ property:
     emd:
       mapper: 190425
       data:
-        hostPort http://localhost:8090
+        hostPort: http://localhost:8090
       controler:
-        hostPort http://localhost:8091
+        hostPort: http://localhost:8091
       host:
         hostPort: http://localhost:8090
       nav:
-        hostPort http://cg-pre-nav.westeurope.cloudapp.azure.com:8057
+        hostPort: http://cg-pre-nav.westeurope.cloudapp.azure.com:8057
         authorization: Basic U0dBOkd1em1hblNnQDE2
       step:
         vendor:

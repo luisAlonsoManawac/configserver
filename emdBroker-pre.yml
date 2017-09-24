@@ -9,6 +9,6 @@ property:
       data:
         hostPort: http://10.0.1.11:8090
       controler:  
-            hostPort: http://10.0.1.11:8090
+        hostPort: http://10.0.1.11:8090
       host:
         hostPort: http://10.0.1.11:8090

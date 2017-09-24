@@ -1,0 +1,7 @@
+# MONGODB
+spring:
+  data:
+    mongodb:
+      host: 10.0.1.11
+
+

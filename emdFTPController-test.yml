@@ -1,0 +1,14 @@
+#EMD
+property:
+  com:
+    emd:
+      broker:
+        ftpserver:
+          Host: 138.68.157.172
+          Port: xx
+          User: xx
+          Password: xx
+        ftp:
+          RemoteDirectory: ./serverDirectory
+          LocalDirectory: ./localDirectory
+          Pattern: *

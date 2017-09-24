@@ -1,0 +1,20 @@
+  
+#EMD
+property:
+  com:
+    emd:
+      db:
+        hostPort: 8091
+        settings:
+          url: settings
+      broker:
+        ftpserver:
+          Host: 10.0.1.7
+          Port: 2110
+          User: GuzPre
+          Password: GuzPre
+        ftp:
+          RemoteDirectory: ./intercambio
+          LocalDirectory: ./intercambio/in
+          Pattern: *
+

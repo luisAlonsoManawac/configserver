@@ -1,0 +1,44 @@
+spring:
+  application:
+    name: emdServiceLayer
+    
+  data:
+    mongodb:
+      authentication-database: admin
+      host: mon1.manapp.com
+      port: 27017
+      username: siteRootAdmin
+      password: password
+      
+  rabbitmq:
+    addresses: mon2.manapp.com
+    host: mon2.manapp.com
+    
+eureka:
+  client:
+    region: default
+    registryFetchIntervalSeconds: 5
+    serviceUrl:
+      defaultZone: http://localhost:8762/eureka/
+server:
+  port: 8099
+  
+#EMD
+property:
+  com:
+    emd:
+      db:
+        hostPort: 8091
+        settings:
+          url: settings
+      broker:
+        ftpserver:
+          Host: mon1.manapp.com
+          Port: 21
+          User: emd
+          Password: jose
+        ftp:
+          RemoteDirectory: ./serverDirectory
+          LocalDirectory: ./localDirectory
+          Pattern: *
+

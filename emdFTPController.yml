@@ -37,8 +37,5 @@ property:
           Port: 21
           User: emd
           Password: jose
-        ftp:
-          RemoteDirectory: ./serverDirectory
-          LocalDirectory: ./localDirectory
-          Pattern: *
 
+          

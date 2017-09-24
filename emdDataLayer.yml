@@ -24,9 +24,9 @@ spring:
     addresses: mon2.manapp.com
     host: mon2.manapp.com
 
-  # VERSION
-  property:
-    com:
-      emd:
-        data:
-          version: 190407
+# VERSION
+property:
+  com:
+    emd:
+      data:
+        version: 190407

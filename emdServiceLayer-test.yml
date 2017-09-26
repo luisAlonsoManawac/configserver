@@ -16,5 +16,12 @@ property:
         entity:
           EntityService:
             hostPort: http://138.68.157.172:8090
+			
+	  core:
+        command:
+          CommandService:
+            hostPort: http://138.68.157.172:8090
+            gatewayHostPort: http://138.68.157.172:8091
+
       db:
         hostPort: http://138.68.157.172:8090

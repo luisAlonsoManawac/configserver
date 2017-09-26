@@ -1,23 +1,30 @@
 spring:
+  application:
+    name: emdServiceLayer
+    
   data:
     mongodb:
       host: 138.68.157.172
       
+  rabbitmq:
+    host: 138.68.157.172
+    
+#EMD
 property:
   com:
     emd:
       api:
         login:
           LoginService:
-            hostPort=http://138.68.157.172:8090
+            hostPort: http://138.68.157.172:8090
         s:
           ValidationServiceImpl:
             hostPort: http://138.68.157.172:8090
         entity:
           EntityService:
             hostPort: http://138.68.157.172:8090
-			
-	  core:
+
+      core:
         command:
           CommandService:
             hostPort: http://138.68.157.172:8090

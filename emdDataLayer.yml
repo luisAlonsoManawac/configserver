@@ -4,11 +4,7 @@ server:
 spring:
   application:
     name: emdDataLayer
-  
-  # PROFILES
-  profiles:
-    active: local
-  
+   
   # MONGODB
   data:
     mongodb:

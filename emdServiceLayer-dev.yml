@@ -1,5 +1,38 @@
-# MONGODB
 spring:
+  application:
+    name: emdServiceLayer
+    
   data:
     mongodb:
-      host: mon1.manapp.com
+      host: 192.168.99.102
+      
+  rabbitmq:
+    host: 192.168.99.102
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://192.168.99.102:8762/eureka/
+#EMD
+property:
+  com:
+    emd:
+      api:
+        login:
+          LoginService:
+            hostPort: http://192.168.99.102:8090
+        s:
+          ValidationServiceImpl:
+            hostPort: http://192.168.99.102:8090
+        entity:
+          EntityService:
+            hostPort: http://192.168.99.102:8090
+
+      core:
+        command:
+          CommandService:
+            hostPort: http://192.168.99.102:8090
+            gatewayHostPort: http://192.168.99.102:8091
+
+      db:
+        hostPort: http://192.168.99.102:8090

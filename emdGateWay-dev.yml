@@ -2,12 +2,12 @@
 spring:
   data:
     mongodb:
-      host: 10.0.1.11
+      host: 192.168.99.102
 
 property:
   com:
     emd:
       api:
         LoginService:
-          hostPort: http://10.0.1.12:8090
+          hostPort: http://192.168.99.102:8090
 

@@ -26,6 +26,7 @@ server:
 
 # will disable the security on the endpoints
 # Permite:  http://{{ip}}:8091/refresh
+# Ejemplo   http://{{ip}}:8091/emdGateway/info
 management:
   security:
     enabled: false 
@@ -60,4 +61,4 @@ property:
 
       services:
         version: 170425
-        info: Refreshhhhhhhhhhhhh
+        info: Refresh

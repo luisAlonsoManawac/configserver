@@ -24,4 +24,3 @@ eureka:
 server:
   port: 8082
 
-message: hola2ddd

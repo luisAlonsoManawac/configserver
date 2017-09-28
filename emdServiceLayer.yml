@@ -23,7 +23,12 @@ eureka:
     
 server:
   port: 8091
-  
+
+# will disable the security on the endpoints
+# Permite:  http://{{ip}}:8091/refresh
+management:
+  security:
+    enabled: false 
 #EMD
 property:
   com:
@@ -55,3 +60,4 @@ property:
 
       services:
         version: 170425
+        info: Refresh

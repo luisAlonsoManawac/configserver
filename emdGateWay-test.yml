@@ -8,5 +8,6 @@ property:
   com:
     emd:
       api:
-        LoginService:
-          hostPort: http://138.68.157.172:8090
+	    login:
+          LoginService:
+            hostPort: http://138.68.157.172:8090

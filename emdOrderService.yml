@@ -17,6 +17,10 @@ spring:
     addresses: mon2.manapp.com
     host: mon2.manapp.com
 
+ribbon:
+  eureka:
+    enabled: true
+	
 # will disable the security on the endpoints
 # Permite:  http://{{ip}}:8091/refresh
 # Ejemplo   http://{{ip}}:8091/emdGateway/info

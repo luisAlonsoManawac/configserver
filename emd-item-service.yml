@@ -2,9 +2,6 @@ server:
   port: ${PORT:7020}
 
 spring:
-  application:
-    name: emdItemService
-    
   data:
     mongodb:
       authentication-database: admin

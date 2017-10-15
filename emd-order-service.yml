@@ -2,9 +2,6 @@ server:
   port: ${PORT:7010}
 
 spring:
-  application:
-    name: emdOrderService
-    
   data:
     mongodb:
       authentication-database: admin

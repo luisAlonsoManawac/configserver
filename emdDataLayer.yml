@@ -1,0 +1,25 @@
+server:
+  port: 8090
+  
+  # MONGODB
+spring:
+  data:
+    mongodb:
+      authentication-database: admin
+      host: mon1.manapp.com
+      port: 27017
+      username: siteRootAdmin
+      password: password
+      # database: emd-db
+      
+  # RABBIT (RabbitProperties)
+  rabbitmq:
+    addresses: mon2.manapp.com
+    host: mon2.manapp.com
+
+# VERSION
+property:
+  com:
+    emd:
+      data:
+        version: 190407

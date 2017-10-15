@@ -2,6 +2,7 @@ server:
   port: 8090
   
   # MONGODB
+spring:
   data:
     mongodb:
       authentication-database: admin

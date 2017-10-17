@@ -1,0 +1,37 @@
+server:
+  port: 8093
+  
+spring:
+  application:
+    name: emdGateWay
+  
+  # MONGODB
+  data:
+    mongodb:
+      authentication-database: admin
+      host: 138.68.157.172
+      port: 27017
+      username: siteRootAdmin
+      password: password
+      # database: emd-db
+      
+  # RABBIT (RabbitProperties)
+  rabbitmq:
+    addresses: 138.68.157.172
+    host: 138.68.157.172
+
+property:
+  com:
+    emd:
+      api:
+        login:
+          LoginService:
+            hostPort: http://138.68.157.172:8090
+            loggedMessage: Logged in successfully!
+            expirationTime: 864000
+      cors:
+        origins: http://138.68.157.172:4200
+        methods: POST,GET,PATCH,DELETE
+      service:
+        login:
+          version: 190407

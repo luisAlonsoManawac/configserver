@@ -1,11 +1,8 @@
 server:
   port: 8093
   
-spring:
-  application:
-    name: emdGateWay
-  
   # MONGODB
+spring:
   data:
     mongodb:
       authentication-database: admin

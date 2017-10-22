@@ -1,5 +1,5 @@
 server:
-  port: 8090
+  port: 8093
   
   # MONGODB
 spring:
@@ -17,9 +17,18 @@ spring:
     addresses: mon2.manapp.com
     host: mon2.manapp.com
 
-# VERSION
 property:
   com:
     emd:
-      data:
-        version: 190407
+      api:
+        login:
+          LoginService:
+            hostPort: http://localhost:8090
+            loggedMessage: Logged in successfully!
+            expirationTime: 864000
+      cors:
+        origins: http://localhost:4200
+        methods: POST,GET,PATCH,DELETE
+      service:
+        login:
+          version: 190407

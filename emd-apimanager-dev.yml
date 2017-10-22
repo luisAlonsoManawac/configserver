@@ -1,0 +1,13 @@
+# MONGODB
+spring:
+  data:
+    mongodb:
+      host: 192.168.99.102
+
+property:
+  com:
+    emd:
+      api:
+	    login:
+          LoginService:
+            hostPort: http://192.168.99.102:8090

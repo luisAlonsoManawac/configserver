@@ -1,0 +1,58 @@
+server:
+  port: ${PORT:7020}
+
+spring:
+  data:
+    mongodb:
+      authentication-database: admin
+      host: mon1.manapp.com
+      port: 27017
+      username: siteRootAdmin
+      password: password
+      
+  rabbitmq:
+    addresses: mon2.manapp.com
+    host: mon2.manapp.com
+
+ribbon:
+  eureka:
+    enabled: true
+
+# will disable the security on the endpoints
+# Permite:  http://{{ip}}:8091/refresh
+# Ejemplo   http://{{ip}}:8091/emdGateway/info
+management:
+  security:
+    enabled: false 
+#EMD
+property:
+  com:
+    emd:
+      api:
+        login:
+          LoginService:
+            hostPort: http://data.manapp.com:8090
+            loggedMessage: Logged in successfully!
+        s:
+          ValidationServiceImpl:
+            hostPort: http://data.manapp.com:8090
+            findByCommerceIdAndActionAndDocument: /commerceFilter/search/findByCommerceIdAndActionAndDocument?commerceId={commerceId}&action={action}&document={document}
+            uriPurchaseOrder: /purchaseOrder
+        entity:
+          EntityService:
+            hostPort: http://data.manapp.com:8090
+            filterNotPassedVerbose: true
+
+      core:
+        command:
+          CommandService:
+            hostPort: http://data.manapp.com:8090
+            gatewayHostPort: http://services.manapp.com:8091
+            findByCommerceIdAndMethodAndUri: /commandSet/search/findByCommerceIdAndMethodAndUri?commerceId={commerceId}&method={method}&uri={uri}
+
+      db:
+        hostPort: http://data.manapp.com:8090
+
+      services:
+        version: 170425
+        info: Refresh emdServices

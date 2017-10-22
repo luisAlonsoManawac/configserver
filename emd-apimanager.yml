@@ -11,11 +11,6 @@ spring:
       username: siteRootAdmin
       password: password
       # database: emd-db
-      
-  # RABBIT (RabbitProperties)
-  rabbitmq:
-    addresses: mon2.manapp.com
-    host: mon2.manapp.com
 
 property:
   com:
@@ -23,7 +18,7 @@ property:
       api:
         login:
           LoginService:
-            hostPort: http://localhost:8090
+            hostPort: http://data.manapp.com:8090
             loggedMessage: Logged in successfully!
             expirationTime: 864000
       cors:

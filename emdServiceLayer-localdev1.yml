@@ -1,0 +1,12 @@
+# MONGODB
+spring:
+  data:
+    mongodb:
+      host: mon1.manapp.com
+	  
+eureka:
+  client:
+    region: default
+    registryFetchIntervalSeconds: 5
+    serviceUrl:
+      defaultZone: http://localhost:8762/eureka/

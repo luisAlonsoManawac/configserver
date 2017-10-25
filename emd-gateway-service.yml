@@ -1,0 +1,47 @@
+info:
+  component: Emd Gateway
+  
+endpoints:
+  restart:
+    enabled: true
+  shutdown:
+    enabled: true
+  health:
+    sensitive: false
+
+zuul:
+  prefix: /emdGateway
+  routes:
+    account: 
+      path: /account/**
+      serviceId: account-service
+    customer: 
+      path: /customer/**
+      serviceId: customer-service        
+    order: 
+      path: /order/**
+      serviceId: emd-order-service      
+    item: 
+      path: /item/**
+      serviceId: emd-item-service 
+    serviceLayer: 
+      path: /emd-core-service/**
+      serviceId: emd-core-service   
+ribbon:
+  eureka:
+    enabled: true
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://discovery.manapp.com:8762/eureka/
+    registerWithEureka: false
+      
+server:
+  port: 8765
+
+logging:
+  file: /logs/${spring.application.name}
+  level:
+    ROOT: INFO
+    org.springframework.web: INFO

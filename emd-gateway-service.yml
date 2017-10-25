@@ -1,3 +1,6 @@
+server:
+  port: 8765
+  
 info:
   component: Emd Gateway
   
@@ -26,22 +29,10 @@ zuul:
       serviceId: emd-item-service 
     serviceLayer: 
       path: /emd-core-service/**
+      serviceId: emd-core-service
+    box: 
+      path: /box/**
       serviceId: emd-core-service   
 ribbon:
   eureka:
     enabled: true
-
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://discovery.manapp.com:8762/eureka/
-    registerWithEureka: false
-      
-server:
-  port: 8765
-
-logging:
-  file: /logs/${spring.application.name}
-  level:
-    ROOT: INFO
-    org.springframework.web: INFO

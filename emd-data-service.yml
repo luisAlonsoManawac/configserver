@@ -6,7 +6,7 @@ spring:
   data:
     mongodb:
       authentication-database: admin
-      host: mongo.manapp.com
+      host: mon1.manapp.com
       port: 27017
       username: siteRootAdmin
       password: password

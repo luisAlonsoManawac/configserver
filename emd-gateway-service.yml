@@ -32,7 +32,10 @@ zuul:
       serviceId: emd-core-service
     box: 
       path: /box/**
-      serviceId: emd-core-service   
+      serviceId: emd-core-service 
+    task: 
+      path: /task/**
+      serviceId: emd-core-service 
 ribbon:
   eureka:
     enabled: true

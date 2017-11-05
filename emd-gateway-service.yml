@@ -30,9 +30,36 @@ zuul:
     serviceLayer: 
       path: /emd-core-service/**
       serviceId: emd-core-service
+    asn: 
+      path: /asn/**
+      serviceId: emd-core-service 
+    BasketList: 
+      path: /BasketList/**
+      serviceId: emd-core-service
     box: 
       path: /box/**
-      serviceId: emd-core-service   
+      serviceId: emd-core-service 
+    layout: 
+      path: /layout/**
+      serviceId: emd-core-service
+    po: 
+      path: /po/**
+      serviceId: emd-core-service
+    shoppinglist: 
+      path: /shoppinglist/**
+      serviceId: emd-core-service
+    stock: 
+      path: /stock/**
+      serviceId: emd-core-service
+    task: 
+      path: /task/**
+      serviceId: emd-core-service 
+    vendor: 
+      path: /vendor/**
+      serviceId: emd-core-service 
+    workorder: 
+      path: /workorder/**
+      serviceId: emd-core-service 
 ribbon:
   eureka:
     enabled: true

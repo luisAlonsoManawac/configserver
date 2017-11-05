@@ -21,6 +21,7 @@ property:
             hostPort: http://data.manapp.com:8090
             loggedMessage: Logged in successfully!
             expirationTime: 864000
+            gatewayHostPort: gateway.manapp.com:8765
       cors:
         origins: http://localhost:4200
         methods: POST,GET,PATCH,DELETE

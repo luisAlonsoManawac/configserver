@@ -1,7 +1,3 @@
-xº  spring:
-  application:
-    name: emdFTPController
-
 #EMD
 property:
   com:

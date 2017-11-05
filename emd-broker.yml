@@ -1,7 +1,5 @@
+# MONGODB
 spring:
-  application:
-    name: emdBroker
-    
   data:
     mongodb:
       authentication-database: admin
@@ -9,18 +7,12 @@ spring:
       port: 27017
       username: siteRootAdmin
       password: password
+      # database: emd-db
       
   rabbitmq:
     addresses: mon2.manapp.com
     host: mon2.manapp.com
-    
-eureka:
-  client:
-    region: default
-    registryFetchIntervalSeconds: 5
-    serviceUrl:
-      defaultZone: http://localhost:8762/eureka/
-    
+      
 server:
   port: 8081
   
@@ -30,11 +22,11 @@ property:
     emd:
       mapper: 190425
       data:
-        hostPort: http://localhost:8090
+        hostPort: http://data.manapp.com:8090
       controler:
-        hostPort: http://localhost:8091
+        hostPort: http://gateway.manapp.com:8765
       host:
-        hostPort: http://localhost:8090
+        hostPort: http://data.manapp.com:8090
       step:
         vendor:
           fixed:

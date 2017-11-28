@@ -33,8 +33,8 @@ zuul:
     asn: 
       path: /asn/**
       serviceId: emd-core-service 
-    BasketList: 
-      path: /BasketList/**
+    basketList: 
+      path: /basketList/**
       serviceId: emd-core-service
     box: 
       path: /box/**

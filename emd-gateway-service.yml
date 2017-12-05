@@ -15,6 +15,9 @@ endpoints:
 zuul:
   prefix: /emdGateway
   routes:
+    user:
+      path: /user/**
+      serviceId: emd-core-service
     account: 
       path: /account/**
       serviceId: account-service

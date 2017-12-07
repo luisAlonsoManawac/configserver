@@ -60,6 +60,12 @@ zuul:
     workOrder: 
       path: /workOrder/**
       serviceId: emd-core-service 
+    warehouseConf: 
+      path: /warehouseConf/**
+      serviceId: emd-core-service
+    company: 
+      path: /company/**
+      serviceId: emd-core-service
 ribbon:
   eureka:
     enabled: true
